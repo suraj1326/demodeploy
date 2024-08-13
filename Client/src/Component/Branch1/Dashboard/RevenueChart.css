@@ -1,0 +1,30 @@
+/* src/components/RevenueChart.css */
+.chart-container {
+    width: 38%;
+    position: absolute;
+    top: 70%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 30px;
+    height: 430px;
+   
+  }
+   
+    .chart-title {
+      text-align: center;
+      font-size: 24px;
+      color: black;
+      margin-bottom: 20px;
+    }
+    
+    @media (max-width: 768px) {
+      .chart-container {
+        width: 100%;
+      }
+    }
+    
+    

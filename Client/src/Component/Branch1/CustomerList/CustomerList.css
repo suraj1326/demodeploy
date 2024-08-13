@@ -1,0 +1,209 @@
+/* Container for the customer list */
+.customer-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    /* margin-top: -60px; */
+    background-color: #c2cbe5b4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Link to add a customer */
+.add-customer-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #008CBA;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    /* margin-bottom: 0px; */
+    margin-right: 1310px;
+    font-size: 20px;
+    width: 140px;
+}
+
+.add-customer-link:hover {
+    background-color: #0056b3;
+}
+
+/* Heading styles */
+#hd {
+    font-size: 30px; /* Adjust font size as needed */
+    margin-bottom: 10px; /* Space below the heading */
+    text-align: left; 
+    margin-right: 1260px;
+    /* margin-top:20px; */
+    
+}
+
+/* Search Bar styles */
+.search-container {
+    margin-bottom: 20px; /* Space below the search bar */
+    align-items: center;
+    /* margin-top: -800px; */
+    
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%; /* Make the input take full width of its container */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Table styles */
+#customer-table {
+    width: 1455px; /* Adjust table width to fit the container */
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Add spacing between rows */
+    table-layout: fixed; /* Distribute columns evenly */
+}
+
+/* Table header and cell styles */
+#customer-table th,
+#customer-table td {
+    padding: 8px;
+    text-align: center;
+    height: 50px; /* Increase the height of the table rows */
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Set specific width for ID column */
+#customer-table th:nth-child(1),
+#customer-table td:nth-child(1) {
+    width: 50px; /* Set a smaller width for the ID column */
+}
+
+/* Set specific width for Email and Address columns */
+#customer-table th:nth-child(4),
+#customer-table td:nth-child(4) {
+    width: 200px; /* Increase the width for the Email column */
+}
+
+#customer-table th:nth-child(5),
+#customer-table td:nth-child(5) {
+    width: 300px; /* Increase the width for the Address column */
+}
+
+/* Adjust other column widths as needed */
+#customer-table th:nth-child(2),
+#customer-table td:nth-child(2) {
+    width: 150px; /* Set width for Customer Name column */
+}
+
+#customer-table th:nth-child(3),
+#customer-table td:nth-child(3) {
+    width: 150px; /* Set width for Phone Number column */
+}
+
+#customer-table th:nth-child(6),
+#customer-table td:nth-child(6) {
+    width: 150px; /* Set width for Date of Birth column */
+}
+
+#customer-table th:nth-child(7),
+#customer-table td:nth-child(7) {
+    width: 100px; /* Set width for Gender column */
+}
+
+#customer-table th:nth-child(8),
+#customer-table td:nth-child(8) {
+    width: 150px; /* Set width for Actions column */
+}
+
+
+#customer-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow effect to header cells */
+    font-size: 20px;
+}
+
+/* Add shadow to each row */
+#customer-table tbody tr {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow effect to rows */
+}
+
+/* Button styles */
+.action-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.edit-button {
+    background-color: #c2cbe5b4; /* Light gray background for active/hover */
+    color: #586ad0; 
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.edit-button:hover {
+    background-color:  #827e7faf;
+}
+
+.delete-button {
+    color: #bb3737;
+    background-color: #d4a4a4a6;
+    font-size: 18px;
+}
+
+.delete-button:hover {
+    background-color: #827e7faf;
+}
+
+/* Footer container styles */
+.footer-container {
+    width: calc(100% - 250px); /* Adjust width to fit page minus sidebar */
+    position: fixed;
+    bottom: 0;
+    left: 250px; /* Position footer to the right of the sidebar */
+    padding: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Pagination styles */
+.pagination {
+    text-align: center;
+}
+
+.pagination ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.pagination li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.pagination button {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.pagination button.active {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.pagination button:disabled {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}

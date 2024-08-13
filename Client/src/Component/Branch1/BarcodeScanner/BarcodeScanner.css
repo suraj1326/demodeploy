@@ -1,0 +1,87 @@
+.scanner-wrapper {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -130px;
+  margin-top: -20px;
+  background-color: #ffffff;
+  width: 1660px;
+  height: 800px;
+  background-image: url('../../../assets/background_customer.png'); 
+    background-size: cover; /* Ensure the image covers the entire overlay */
+    background-position: center;
+    /* background-color:  #c2cbe5b4; */
+  /* border: 40px solid red; */
+}
+
+.scanner-container {
+  position: relative;
+  width: 60%;
+  max-width: 300px;
+  height: 360px;
+  margin: auto;
+  margin-top: -0px;
+}
+
+.ding {
+  font-size: 30px;
+  text-align: center;
+  margin-left: 200px;
+  margin-top: -10px;
+}
+
+#ph1 {
+  font-size: 23px;
+  /* text-align: center; */
+  margin-left: 200px;
+  margin-bottom:1000px;
+  font-weight: bold;
+}
+
+
+
+.product-table {
+  width: 1300px;
+  margin-top: 1rem;
+  border-collapse: collapse;
+  text-align: left;
+  margin-left: 150px;
+  table-layout: fixed; /* Add this line */
+  margin-top: -1000px;
+}
+
+.product-table th, .product-table td {
+  padding: 8px 12px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  width: calc(1000px / 5); /* Replace '5' with the actual number of columns */
+  height: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.product-table th {
+  background-color: #ffffff;
+  font-weight: bold;
+
+}
+
+.product-table tr:nth-child(even) {
+  background-color: #ece7e7;
+}
+.product-table tr:nth-child(odd) {
+  background-color: #f1ecec;
+}
+
+.product-table tr:hover {
+  background-color: #ffffff;
+}
+
+.product-image {
+  width: 50px;
+  height: 50px;
+}
+
+.no-product-message {
+  color: black;
+}

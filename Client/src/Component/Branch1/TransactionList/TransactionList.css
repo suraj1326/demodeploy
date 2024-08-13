@@ -1,0 +1,175 @@
+/* Container for the entire transaction list component */
+#transaction-list-container {
+    position: relative; /* Establish a positioning context */
+    padding: 20px;
+    margin-left: 50px; 
+    box-sizing: border-box; /* Include padding in the width */
+    top: 0; /* Ensure it starts at the top */
+    /* margin-top: -60px; */
+    /* overflow: hidden; */
+    /* overflow-x: hidden; Hide horizontal scrollbar */
+    /* overflow-y: hidden; Hide vertical scrollbar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #c2cbe5b4;
+}
+
+/* Heading and filters container styling */
+#heading-filters-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Heading style */
+#transaction-list-heading {
+    font-size: 30px;
+    margin: 0;
+}
+
+/* Error message styling */
+#transaction-list-error {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Filter container styling */
+#filters-container {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+}
+
+/* Search input field styling */
+#search-input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Payment mode select field styling */
+#payment-mode-select {
+    padding: 8px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Table wrapper styling */
+#transaction-list-table-wrapper {
+    width: 100%; /* Ensure the wrapper spans the full width of the container */
+    /* overflow-x: hidden; Hide horizontal scrollbar */
+    /* overflow-y: hidden; Hide vertical scrollbar */
+}
+
+/* Table styling */
+#transaction-list-table {
+    width: 1460px; /* Adjusted to fit the container */
+    border-collapse: separate;
+    border-spacing: 10px; /* Add spacing between cells */
+    margin-top: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect for the table */
+}
+
+/* Table header styling */
+#transaction-list-table thead {
+    background-color: #f4f4f4;
+}
+
+/* Table header cells styling */
+#transaction-list-table th {
+    padding: 10px;
+    text-align: left;
+    box-shadow: none; /* Remove shadow from table headers */
+    background-color: #f2f2f2;
+    height: 41px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Table body cells styling */
+#transaction-list-table td {
+    padding: 15px; /* Increased padding for more height */
+    background: white; /* Ensure the background is white to show shadows */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Shadow effect for table cells */
+    height: 45px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Set column widths */
+
+#transaction-list-table th:nth-child(3),
+#transaction-list-table td:nth-child(3){
+    width: 200px; /* Width for Product Names */
+}
+#transaction-list-table th:nth-child(1),
+#transaction-list-table td:nth-child(1),
+#transaction-list-table th:nth-child(2),
+#transaction-list-table td:nth-child(2),
+
+#transaction-list-table th:nth-child(4),
+#transaction-list-table td:nth-child(4),
+#transaction-list-table th:nth-child(5),
+#transaction-list-table td:nth-child(5),
+#transaction-list-table th:nth-child(6),
+#transaction-list-table td:nth-child(6) {
+    width: 150px; /* Equal width for Sale ID, Date, Payment Mode, and Amount */
+}
+
+/* Table row styling */
+.transaction-list-row:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Table row hover effect */
+.transaction-list-row:hover {
+    background-color: #ddd;
+}
+
+/* Pagination styling */
+.footer-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination {
+    display: flex;
+}
+
+.pagination-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.pagination-item {
+    margin: 0 5px;
+}
+
+.pagination-button {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pagination-button.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination-button:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.pagination-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}

@@ -1,0 +1,156 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  /* overflow: hidden; Prevent scrollbars */
+  background-color: #c2cbe5b4; /* Light grey background */
+}
+#item ,#payment{
+  font-size: 17px;
+  /* font-weight: bold; */
+  padding: 10px;
+}
+/* The form container */
+.add-sale-form {
+  width: 1410px; /* Subtracting 20px to account for 10px margin on both sides */
+  height: 100%; /* Subtracting 20px to account for 10px margin on top and bottom */
+  margin: 10px; /* 10px margin from all sides */
+  padding: 40px; /* Increased padding for better spacing */
+  background-color: #ffffff; 
+  border-radius: 10px; /* Slightly increased border radius */
+  overflow-y: auto; /* Add vertical scrolling if content overflows */
+  margin-left: 20px;
+  border: 40px solid #c2cbe5b4;
+  margin-top: 50px;
+}
+
+.add-sale-form h2 {
+  text-align: center;
+  margin-bottom: 30px; /* Increased margin for better spacing */
+  color: #333333; /* Dark grey text color */
+  font-size: 30px;
+  margin-top: -30px;
+}
+
+.customer-info,
+.summary-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px; /* Increased margin for better spacing */
+}
+
+.input-group {
+  flex: 1;
+  margin-right: 15px; /* Slightly increased margin between input groups */
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px; /* Increased margin for better spacing */
+  font-weight: bold;
+  color: #555555; /* Medium grey text color */
+}
+
+.input-group input,
+.input-group select {
+  width: 200px; /* Adjust width to fit padding */
+  padding: 20px; /* Increased padding for better spacing */
+  height: 50px; /* Increased height for input fields */
+  border-radius: 5px; /* Slightly increased border radius */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  box-shadow: 0 2px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect for input fields */
+  border: none; /* Remove border */
+  /* padding-right: 90px; */
+}
+#addsale-save-btn{
+  display: block;
+  width: 100%;
+  padding: 14px; /* Increased padding for better spacing */
+  background-color: #3f7dc4; /* Blue background for buttons */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Slightly increased border radius */
+  cursor: pointer;
+  /* margin-left: 450px; */
+  font-size: 20px;
+}
+.add-sale-form .new-row-btn, #scan {
+  display: block;
+  width: 100%;
+  padding: 14px; /* Increased padding for better spacing */
+  background-color: #3f7dc4; /* Blue background for buttons */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Slightly increased border radius */
+  cursor: pointer;
+  /* margin-left: 1250px; */
+  font-size: 20px;
+}
+
+.new-row-btn {
+  margin-bottom: 25px; /* Increased margin for better spacing */
+}
+
+#scan {
+  text-align: center;
+}
+
+.new-row-btn:hover,
+#addsale-save-btn:hover,
+#scan:hover {
+  background-color: #214c88; /* Slightly darker blue for hover state */
+}
+
+.sale-items-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px; /* Increased margin for better spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect for the entire table */
+  border: none; /* Remove border */
+}
+
+.sale-items-table th,
+.sale-items-table td {
+  padding: 12px; /* Increased padding for better spacing */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  height: 70px; /* Increased height for table rows */
+  background-color: #ffffff; /* White background for table cells */
+}
+
+.sale-items-table th {
+  background-color: #d3d7db; /* Light grey background for table headers */
+  font-size: 20px;
+}
+
+.sale-items-table td select,
+.sale-items-table td input {
+  width: calc(100% - 14px); /* Adjust width to fit padding */
+  padding: 15px; /* Increased padding for better spacing */
+  border-radius: 5px; /* Slightly increased border radius */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect for input fields */
+  border: none; /* Remove border */
+  font-size: 18px;
+}
+
+.sale-items-table td button {
+  background-color: #dc3545; /* Red background for delete button */
+  color: white;
+  border: none;
+  padding: 10px 16px; /* Increased padding for better spacing */
+  border-radius: 5px; /* Slightly increased border radius */
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect for the button */
+  font-size: 18px;
+}
+
+.sale-items-table td button:hover {
+  background-color: #c82333; /* Slightly darker red for hover state */
+}
+
+/* Add shadow effect for .st class */
+.st {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}

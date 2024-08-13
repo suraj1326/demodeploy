@@ -1,0 +1,176 @@
+/* PurchaseList.css */
+
+.purchase-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px; /* Adjust this value to match the width of your sidebar */
+    /* margin-top: -20px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #c2cbe5b4;
+    width: 1460px; /* Adjust this value to match the width of your sidebar */
+}
+
+.add-purchase-link {
+    text-decoration: none;
+    color: white;
+    background-color: #008CBA;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    margin-left: -1310px;
+    font-size: 18px;
+}
+
+.add-purchase-link:hover {
+    background-color: #031f87;
+    color: #ccc;
+}
+
+.heading-search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.purchase-heading {
+    font-size: 30px;
+    margin: 0;
+    margin-left: 5px;
+    /* margin-bottom: 10px; */
+    /* margin-top: -5px; */
+    color: rgb(58, 60, 60);
+}
+
+.search-container {
+    text-align: right;
+    margin-right: -1px;
+}
+
+.search-input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.purchase-table {
+    width: 1470px; /* Use 100% to fit the container */
+    /* border-collapse: separate; */
+    border-spacing: 10px; /* Add spacing between cells */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect for the table */
+}
+
+.purchase-table-head {
+    background-color: #f2f2f2;
+}
+
+ .purchase-table-td {
+    padding: 4px; /* Reduced padding for shorter row height */
+    text-align: left;
+    background: white; /* Ensure the background is white to show shadows */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Shadow effect for table cells */
+    width: 10%; /* Set equal width for all columns */
+    /* line-height: 2.2; Adjust line height for better row height control */
+    font-size: 18px;
+    height: 55px;
+    /* font-weight: bold; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.purchase-table-th{
+    padding: 4px; /* Reduced padding for shorter row height */
+    text-align: left;
+    background: white; /* Ensure the background is white to show shadows */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Shadow effect for table cells */
+    width: 10%; /* Set equal width for all columns */
+    /* line-height: 2; Adjust line height for better row height control */
+    font-size: 18px;
+    /* font-weight: bold; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.purchase-table-th-product-names, .purchase-table-td-product-names {
+    width: 10%; /* Set width for the product names column */
+}
+
+.purchase-table-th {
+    background-color: #f2f2f2;
+    color: black;
+    padding-top: 8px; /* Reduced padding for shorter header height */
+    padding-bottom: 8px;
+    text-align: left;
+    box-shadow: none; /* Remove shadow from table headers */
+    line-height: 1.3;
+}
+
+.purchase-table-tr:nth-child(even) .purchase-table-td {
+    background-color: #f2f2f2;
+}
+
+.purchase-table-tr:hover .purchase-table-td {
+    background-color: #ddd;
+}
+
+.bl {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* float: left; */
+    /* margin-left: -30px; */
+}
+
+.bl:hover {
+    background-color: #006f9a;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination {
+    display: flex;
+}
+
+.pagination-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.pagination-item {
+    margin: 0 5px;
+}
+
+.pagination-button {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    float: left;
+}
+
+.pagination-button.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination-button:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.pagination-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
